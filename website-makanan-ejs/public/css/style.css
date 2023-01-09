@@ -1,9 +1,14 @@
+body {
+  overflow-x: hidden;
+}
 .jumbotron {
+  margin-top: 1rem;
   padding: 2rem;
-  background-color: rgb(240, 240, 240);
+  background-color: none;
 }
 
 .jumbotron .banner {
+  margin-top: 2rem;
   height: 50%;
   width: 100%;
   border-radius: 50px;
@@ -25,6 +30,27 @@
 .jumbotron .banner .banner-images .banner-img {
   position: absolute;
 
+  border-radius: 50%;
+}
+.card {
+  border: none;
+}
+#cart {
+  background-color: rgb(255, 237, 71);
+  color: black;
+}
+.card img {
+  height: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.list-menu {
+  margin-top: 20px;
+  border: none;
+}
+
+.list-group-item.active {
+  background-color: rgb(159, 208, 252);
   border-radius: 50%;
 }
 
@@ -87,4 +113,11 @@
     padding: 14px 22px;
     width: 176px;
   }
+}
+footer {
+  background-color: rgb(255, 237, 71);
+}
+footer .social-media {
+  text-decoration: none;
+  color: black;
 }

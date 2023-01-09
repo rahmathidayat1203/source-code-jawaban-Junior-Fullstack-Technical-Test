@@ -7,10 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <!-- <link rel="stylesheet" href="/public/css/styles.css" /> -->
     <link rel="stylesheet" href="public/css/style.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
   </head>
   <body>
     <!-- navbars -->
-    <nav class="navbar shadow-sm navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar shadow-sm navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Warung Makan <b>Barokah</b></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,9 +21,9 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Menu</a>
+            <a class="nav-link" href="#menu">Menu</a>
+            <a class="nav-link" href="#about">About</a>
             <a class="nav-link" href="#">Delivery</a>
-            <a class="nav-link" href="#">About</a>
           </div>
         </div>
       </div>
@@ -34,10 +36,8 @@
           <div class="row">
             <div class="col">
               <div class="tag-line ms-5">
-                <p class="tags-line-1 fs-1 fw-bold">Enak &</p>
-                <p class="fs-1 fw-semibold">Mengenyangkan</p>
-                <p class="fs-5">Nikmati Hidangan Dengan Cita Rasa Rumahan</p>
-                <p class="fs-5">Yang Akan Membuat Anda Sangat Menikmati Waktu Makan Anda</p>
+                <p class="tags-line-1 fs-1 fw-bold">Enak & Mengenyangkan</p>
+                <h6 class="fs-5 fw-normal mb-5">Nikmati Hidangan Dengan Cita Rasa Rumahan,Yang Akan Membuat Anda Sangat Menikmati Waktu Makan Anda</h6>
                 <button class="button-65" role="button">Discover Menu</button>
               </div>
             </div>
@@ -52,8 +52,67 @@
     </section>
     <!-- end jumbotron -->
     <!-- menu -->
-    
+    <section id="menu">
+      <div class="row-flex text-center justify-content-center align-items-center flex-wrap mb-5">
+        <h1 class="fs-2 fw-bold">Popular Menu</h1>
+        <ul class="list-group list-group-horizontal justify-content-center align-items-center flex-wrap mb-3">
+          <a href="#" class="active list-menu list-group-item">Jawa</a>
+          <a href="#" class="list-menu list-group-item">Padang</a>
+          <a href="#" class="list-menu list-group-item">Palembang</a>
+          <a href="#" class="list-menu list-group-item">Madura</a>
+        </ul>
+      </div>
+      <div class="row justify-content-center ms-4 text-center">
+        <div class="col justify-content-center ms-4 text-center">
+          <div class="card" style="width: 18rem">
+            <img src="public/img/soto-kudus.jpg" class="card-img-top" alt="bakso" />
+            <div class="card-body">
+              <h5 class="card-title">Soto Kudus</h5>
+              <a href="#" id="cart" class="btn btn-primary fs-6 fw-normal"><i class="fa-solid fa-cart-shopping"> 15 k</i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col justify-content-center ms-4 text-center">
+          <div class="card" style="width: 18rem">
+            <img src="public/img/Nasi-Grombyang.jpg" class="card-img-top" alt="bakso" />
+            <div class="card-body">
+              <h5 class="card-title">Nasi Grombyang</h5>
+              <a href="#" id="cart" class="btn btn-primary fs-6 fw-normal"><i class="fa-solid fa-cart-shopping"> 20 k</i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col justify-content-center ms-4 text-center">
+          <div class="card" style="width: 18rem">
+            <img src="public/img/Garang-Asem.jpg" class="card-img-top" alt="bakso" />
+            <div class="card-body">
+              <h5 class="card-title">Garang Asem</h5>
+              <a href="#" id="cart" class="btn btn-primary fs-6 fw-normal"><i class="fa-solid fa-cart-shopping"> 15 k</i></a>
+            </div>
+          </div>
+        </div>
+    </section>
     <!-- end menu -->
+    <!-- about -->
+    <section id="about" class="about">
+      <div class="container mt-5 mb-5">
+        <div class="row-md text-center mb-4">
+          <div class="col">
+            <h3>About Warung Makan Barokah</h3>
+          </div>
+        </div>
+        <div class="row text-center justify-content-center">
+          <div class="col-10 fs-4">Kami Hadir Agar Anda Bisa Tetap Merasakan Masakan Rumah,Walaupun Anda Sedang Berada Dalam Situasi Padat Aktifitas.</div>
+        </div>
+      </div>
+    </section>
+    <!-- end about -->
+    <!-- footer -->
+     <!-- footer -->
+    <footer class="text-center p-2">
+      <p class="fw-semibold fs-6 text-black"><a class="social-media" href="https://www.instagram.com/r_hidayat_12/">Rahmat Hidayat</a> | Created with ejs & bootstrap 5</p>
+    </footer>
+    <!-- footer -->
+    <!-- end footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
