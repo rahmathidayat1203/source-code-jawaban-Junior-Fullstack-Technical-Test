@@ -1,0 +1,23 @@
+{
+  "name": "website-makanan-ejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "cd ./prisma && npx prisma format",
+    "migrate": "cd ./prisma && npx prisma migrate dev --name init --skip-generate",
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "prisma": "^4.8.1"
+  }
+}
