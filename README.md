@@ -1,1 +1,3 @@
-# INI ADALAH REPOSITORY UNTUK JAWABAN-JAWABAN Junior Fullstack - Technical Test
+# Repository jawaban Fullstack - Technical Test
+
+untuk menjalankan website makanan lakukan **npm i**
